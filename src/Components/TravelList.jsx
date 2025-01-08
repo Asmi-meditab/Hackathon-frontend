@@ -9,7 +9,7 @@ const TravelList = () => {
   // Fetch travel data from backend when component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/travel") // Assuming the backend is running on localhost:5000
+      .get("https://hackthon-meditab-1.onrender.com/api/travel") // Assuming the backend is running on localhost:5000
       .then((response) => {
         setTravels(response.data); // Store fetched data in state
         setLoading(false); // Set loading to false once data is fetched
@@ -23,7 +23,7 @@ const TravelList = () => {
   // Handle status update
   const updateStatus = (id, newStatus) => {
     axios
-      .patch(`http://localhost:5000/api/travel/${id}`, { status: newStatus })
+      .patch(`https://hackthon-meditab-1.onrender.com/api/travel/${id}`, { status: newStatus })
       .then((response) => {
         // Update the local state with the new status
         setTravels((prevTravels) =>

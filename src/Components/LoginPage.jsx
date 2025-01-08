@@ -52,7 +52,7 @@ const LoginPage = () => {
   setError(""); // Reset error message on submit
 
   try {
-    const response = await axios.post("http://localhost:5000/api/login", {
+    const response = await axios.post("https://hackthon-meditab-1.onrender.com/api/login", {
       email,
       password,
     });

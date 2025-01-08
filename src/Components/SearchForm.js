@@ -37,7 +37,7 @@ const SearchForm = () => {
       try {
         // Send the form data to the backend via POST request
         console.log(formData)
-        await axios.post('http://localhost:5000/api/dummy-data', [travelData]); // Sending as an array as expected by the backend
+        await axios.post('https://hackthon-meditab-1.onrender.com/api/dummy-data', [travelData]); // Sending as an array as expected by the backend
         console.log('Data inserted successfully');
 
         // Optionally, navigate to another page after successful insertion

@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17",
-     "react-scripts": "^5.0.0",  // or the relevant build tools you're using
-  "webpack": "^5.0.0",        // If you're using webpack directly
-  "babel": "^7.0.0"           // If you're using Babel
+     "react-scripts": "^5.0.0",  
+  "webpack": "^5.0.0",        
+  "babel": "^7.0.0"           
   }
 }
